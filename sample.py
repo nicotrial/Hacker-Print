@@ -1,4 +1,4 @@
-from HackerPrint import hackerPrint
+from HackerPrint import hackerPrint,hackerPrintErr
 from time import sleep
 
 banner = r"""
@@ -32,4 +32,13 @@ hackerPrint("\n[!] Crap this is bad","ERROR",True)
 hackerPrint("\n[-] This is really heavy DOC","HEAVY",True)
 hackerPrint("\n[+] Yeaaah now we are Talking","GOOD",True)
 hackerPrint("\n[!!] RUN FOR YOUR LIFE","VERYBAD",True,0.01)
+print "\n"
+
+hackerPrintErr("\n[#] This is an Error Message","ERROR",False)
+hackerPrintErr("\n[xD] This is some heavy stuff","HEAVY",False)
+hackerPrintErr("\n[*] Wow somthing good happend","GOOD",False)
+hackerPrintErr("\n[!] Crap this is bad","ERROR",True)
+hackerPrintErr("\n[-] This is really heavy DOC","HEAVY",True)
+hackerPrintErr("\n[+] Yeaaah now we are Talking","GOOD",True)
+hackerPrintErr("\n[!!] RUN FOR YOUR LIFE","VERYBAD",True,0.01)
 print "\n"
