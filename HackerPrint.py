@@ -80,3 +80,64 @@ def hackerPrint(msg, type="ERROR", bold=False, speed=0.03):
                 sys.stdout.write(BGREEN + char + RESET)
                 sys.stdout.flush()
 
+def hackerPrintErr(msg, type="ERROR", bold=False, speed=0.03):
+
+    if type is "ERROR":
+        if not bold:
+            for char in msg:
+                sleep(speed)
+                sys.stderr.write(RED + char + RESET)
+                sys.stderr.flush()
+        else:         
+            for char in msg:
+                sleep(speed)
+                sys.stderr.write(BRED + char + RESET)
+                sys.stderr.flush()
+
+    if type is "HEAVY":
+        if not bold:
+            for char in msg:
+                sleep(speed)
+                sys.stderr.write(CYAN + char + RESET)
+                sys.stderr.flush()
+        else:         
+            for char in msg:
+                sleep(speed)
+                sys.stderr.write(BCYAN + char + RESET)
+                sys.stderr.flush()
+
+    if type is "GOOD":
+        if not bold:
+            for char in msg:
+                sleep(speed)
+                sys.stderr.write(GREEN + char + RESET)
+                sys.stderr.flush()
+        else:         
+            for char in msg:
+                sleep(speed)
+                sys.stderr.write(BGREEN + char + RESET)
+                sys.stderr.flush()
+
+    if type is "VERYBAD":
+        if not bold:
+            for char in msg:
+                sleep(speed)
+                sys.stderr.write(RED2 + char + RESET)
+                sys.stderr.flush()
+        else:         
+            for char in msg:
+                sleep(speed)
+                sys.stderr.write(BRED2 + char + RESET)
+                sys.stderr.flush()
+
+    if type is "IRHUMAN":
+        if not bold:
+            for char in msg:
+                sleep(random.uniform(0.05, 0.4))
+                sys.stderr.write(GREEN + char + RESET)
+                sys.stderr.flush()
+        else:         
+            for char in msg:
+                sleep(random.uniform(0.05, 0.4))
+                sys.stderr.write(BGREEN + char + RESET)
+                sys.stderr.flush()
